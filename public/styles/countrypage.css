@@ -1,0 +1,153 @@
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#back-button{
+
+margin-bottom: 50px;
+margin-left: 5%;
+font-size: medium;
+font-weight: 400;
+border-style: hidden;
+border-radius: 5px;
+background-color: whitesmoke;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+padding: 5px;
+width: 100px;
+cursor: pointer;
+transition: background-color 0.3s ease , color 0.3s;
+
+}
+.back-arrow{
+    width: 15px;
+    height: 10px;
+    margin-right: 10px;
+
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+    
+
+}
+.the-flag{
+    width: 30%;
+    height: 270px;
+    margin-left: 5%;
+    min-width: 25%;
+    flex:1;
+    min-width: 270px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    
+}
+.the-info{
+    flex:2;
+    min-width:  500px;
+}
+ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 25px;
+    font-weight: 400px;
+    font-size: medium;
+    line-height: 35px;       
+}
+.info-set-1{
+    padding-left: 0;
+    margin-left: 0;
+    min-width: 200px;
+    flex:1.5;
+}
+.info-set-2{
+    flex: 2;
+    min-width: 200px;
+}
+.info{
+    display: flex;
+    margin-right: 5%;
+    min-width: 25%;
+}
+
+.Borders{
+  display: flex;
+  gap:5px;
+  align-items: center;
+
+}
+
+.border-countries {
+background-color: whitesmoke;
+box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+border-style: hidden;
+padding: 5px;
+text-align: center;
+}
+
+
+#back-button:hover{
+background-color: rgba(43,55,200,255) !important;
+  
+}
+
+@media( max-width:680px){
+ .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .the-flag{
+    margin: 0;
+    height: 300px;
+    width: 80%;
+    margin-bottom: 30px;
+ }
+
+ ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 25px;
+    font-weight: 300px;
+    font-size: small;
+    line-height: 30px;       
+}
+
+.Borders{
+    display: flex;
+    gap:5px;
+    align-items: center;
+    font-weight: 500px;
+    font-size: 300;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 4vw;
+  
+  }
+  
+  .border-countries {
+  background-color: whitesmoke;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  border-style: hidden;
+  padding: 5px;
+  text-align: center;
+  font-size: 200;
+  
+  }
+
+  .the-info{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.the-info h2{
+    text-align: center;
+}
+
+.info-set-1{
+   margin-left: 10%;
+}
+
+}

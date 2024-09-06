@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Countries API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="public/styles/Header.css">
+<link rel="stylesheet" href="public/styles/main.css">
+<link rel="stylesheet" href="public/styles/countrypage.css">
+<link rel="stylesheet" href="public/styles/Darkmode.css">
+
+</head>
+<body>
+    <header>
+    <h1>Where are you ?</h1>
+    <button id="theme-selector"><img src="public/icons/crescent-moon.png" class="mode-icon">Dark mode</button>
+    </header>
+
+    <button id="back-button">
+        <img src="public/icons/left-arrow.png" class="back-arrow" >
+        Back
+    </button>
+
+    <section class="container">
+        <img class="the-flag">
+        
+        <div class="the-info">
+            <h2></h2>
+
+            <div class="info">
+                <ul class="info-set-1">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            <ul class="info-set-2">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            </div>
+            <div class="Borders">
+                <p>Border Countries:</p>
+            </div>
+
+        </div>  
+    </section>
+    <span class="Border-Countries"></span>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="public/scripts/country.js"></script>
+
+</body>
+</html>

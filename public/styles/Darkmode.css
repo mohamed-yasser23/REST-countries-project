@@ -1,0 +1,18 @@
+
+/* header*/
+
+
+body.dark-mode {
+    
+background-color: rgb(33,46,55);  
+color: aliceblue;
+    
+}
+
+.dark-mode {
+    color :aliceblue !important;
+    background-color: rgba(43,55,67,255) !important;
+}
+.Search-text.dark-mode::placeholder{
+    color: aliceblue;
+}

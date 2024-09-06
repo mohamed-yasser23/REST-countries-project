@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Countries API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="public/styles/Header.css">
+<link rel="stylesheet" href="public/styles/main.css">
+<link rel="stylesheet" href="public/styles/countrypage.css">
+<link rel="stylesheet" href="public/styles/Darkmode.css">
+
+</head>
+<body>
+    <header>
+    <h1>Where are you ?</h1>
+    <button id="theme-selector"><img src="public/icons/crescent-moon.png" class="mode-icon">Dark mode</button>
+    </header>
+
+        <main class="main-container">
+            <section id="utilites-bar">
+              
+              <form id="Search-bar" action="/name" method="POST">
+            
+                <button class="search-button" type="submit">
+                  <img class ="search-icon" src="public/icons/black.png">
+                </button>
+                <input type="text" name="CountrySearch" class="Search-text" placeholder="Search">
+              
+             </form>
+            
+        
+             <form action="/regions" id="form" method="POST">
+               
+                <select name="Region" id="form-select" >
+                    
+                  <option value=""  data-display="Select" >Filter by region</option>
+                  <option value="africa"   >Africa</option>
+                  <option value="america">America</option>
+                  <option value="asia">Asia</option>
+                  <option value="europe">Europe</option>
+                  <option value="oceania">Oceania</option>
+                  <option value="All">All Regions</option>
+                  
+                  </select>
+                  </form>
+            </section>
+            
+    <section id="Countries-grid">
+     
+    </section>
+
+    </main>
+    <div class="country-card" ><img class="country-flag"><h2 class="country-name"></h2><ul class="country-info"><li></li><li></li><li></li></ul></div>
+   
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="public/scripts/home.js"></script>
+
+    
+    
+    </body>
+    </html>
