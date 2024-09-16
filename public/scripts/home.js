@@ -180,6 +180,7 @@ function toggleMainPage(){
     document.querySelector('select').classList.toggle('dark-mode');
     document.querySelector('.Search-text').classList.toggle('dark-mode');
     document.querySelector('.search-button').classList.toggle('dark-mode');
+   document.querySelector(".country-card").classList.toggle('dark-mode');
 
     document.querySelectorAll('h2').forEach(card => {
         card.classList.toggle('dark-mode');
